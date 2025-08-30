@@ -2,16 +2,25 @@ body{
     background-image: url('img/bg.jpg');
      background-size: 100%;
     background-position: center;
+   
     
 }
 
+ @media screen and (max-width: 600px)  {
+    body {font-size: smaller;}
+        
+    }
 .container{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
  
     width: 480px;
+    @media screen and (max-width: 600px)  {
+      width: 240px;
+        
+    }
     margin: 0 auto;
-    padding: 10px 10px 50px;
+    padding: 10px 10px 40px;
     background-color: #FBF9D1;
      border-radius: 15px;
 
@@ -21,6 +30,10 @@ body{
 
 input{
     width: 425px;
+    @media screen and (max-width: 600px)  {
+      width: 213px;
+        
+    }
     height: 20px;
 
 }
@@ -30,5 +43,11 @@ button{
     background-color: #9A3F3F;
     padding: 5px 5px;
     border-radius: 5px;
+}
+
+#result{
+    color:#9A3F3F;
+    font-weight: 600;
+    
 }
 

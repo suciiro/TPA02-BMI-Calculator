@@ -1,5 +1,6 @@
 
 let btnCalculate = document.getElementById('calculate')
+let result = document.getElementById('result')
 
 btnCalculate.addEventListener ('click', (event) =>{
     event.preventDefault()
@@ -16,12 +17,17 @@ btnCalculate.addEventListener ('click', (event) =>{
         status = 'normal'
     } else if ( bmi < 30){
         status = 'overweight'
-    } else (
+    } else {
         status = 'obesity'
-    )
+    }
     console.log(status)
 
-   
+    result.textContent = `Your BMI is ${bmi.toFixed(1)} which means you are ${status}`
+    
+    if (isNaN(bodyHeight) || isNaN (bodyWeight) || bodyHeight <=0 || bodyWeight<=0){
+        result.textContent = "Insert a Valid Number"
+    }
+
 }
 
 )

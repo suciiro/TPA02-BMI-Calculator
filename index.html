@@ -9,25 +9,27 @@
 </head>
 <body>
     <div class="container">
-    <h1>Check Your BMI</h1>
-    <p>Enter your weight and height below to check your BMI results</p>
+        <h1>Check Your BMI</h1>
+        <p>Enter your weight and height below to check your BMI results</p>
 
-    <form>
-        <div>
-            <span>Put your weight in here (KG)</span>
+        <form>
+            <div>
+                <span>Put your weight in here (KG)</span>
+                <br>
+                <input type="number" id="weight" placeholder="Type number here...."></input>
+            </div>
             <br>
-            <input type="number" id="weight" placeholder="Type number here...."></input>
-        </div>
-<br>
-        <div>
-            <span>And your height here (CM)</span>
+            <div>
+                <span>And your height here (CM)</span>
+                <br>
+                <input type="number" id="height" placeholder="Type number here...."></input>
+            </div>
             <br>
-            <input type="number" id="height" placeholder="Type number here...."></input>
-        </div>
-        <br>
 
-        <div>
-            <button type="button" id="calculate">Calculate BMI</button>
+            <div>
+                <button type="button" id="calculate">Calculate BMI</button>
+
+            <p id="result"></p>
         </div>
         
         
