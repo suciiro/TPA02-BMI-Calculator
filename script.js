@@ -12,13 +12,13 @@ btnCalculate.addEventListener ('click', (event) =>{
 
     let status =''
     if (bmi < 18.5){
-        status = 'underweight'
+        status = 'UNDERWEIGHT'
     } else if ( bmi < 25){
-        status = 'normal'
+        status = 'NORMAL'
     } else if ( bmi < 30){
-        status = 'overweight'
+        status = 'OVERWEIGHT'
     } else {
-        status = 'obesity'
+        status = 'OBESITY'
     }
     console.log(status)
 
